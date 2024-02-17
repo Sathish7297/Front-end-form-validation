@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(34, 193, 195);
+    background:linear-gradient(0deg, rgb(34, 193, 195),rgba(121,32,153,1)86%);
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif;
+    /* height: 100vh; */
+}
+#form{
+    background-color: whitesmoke;
+    width: 400px;
+    padding: 30px;
+    margin: 10vh auto 10vh auto;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    color: #792099;
+}
+.container{
+    display:flex;
+   
+     align-items: center;
+    justify-content: center;
+}
+#form button{
+   background-color: #792099;
+    /* width: 400px; */
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 20px 0px;
+    border: 1px solid #792099;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    
+
+}
+.input_grp{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.input_grp input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(34, 193, 195);
+}
+.input_grp input:focus{
+    outline: 0px;
+}
+.input_grp .error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+/* .input_grp .success input{
+    border-color: green;
+} */
+/* .input_grp .error input{
+    border-color:rgb(233, 50, 4) !important;
+} */
+
+#form > div.input_grp.success input{
+    border-color: green;
+}
+#form > div.input_grp.error input{
+    border-color:rgb(233, 50, 4) ;
+}
